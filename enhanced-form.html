@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML Form</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #ddd;
+      margin: 10px;
+    }
+
+    header, section {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid gray;
+    }
+
+    h1, h2 {
+      color: black;
+    }
+
+    table {
+      width: 100%;
+      border: 1px solid black;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+
+    input, select, textarea {
+      display: block;
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100%;
+    }
+
+    button {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      border: none;
+    }
+
+    img, video {
+      width: 50%;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced HTML Form</h1>
+  </header>
+
+  <section>
+    <h2>Personal Information Form</h2>
+    <form>
+      <label>Full Name:</label>
+      <input type="text" placeholder="Enter Your Name" required autocomplete="name">
+
+      <label>Email:</label>
+      <input type="email" placeholder="someone@example.com" required autocomplete="email">
+
+      <label>Date of Birth:</label>
+      <input type="date" required>
+
+      <label>Country:</label>
+      <select required>
+        <option value="">--Choose--</option>
+        <option>Nigeria</option>
+        <option>USA</option>
+        <option>UK</option>
+      </select>
+
+      <label>Short Bio:</label>
+      <textarea rows="3" placeholder="About you..."></textarea>
+
+      <label>Readonly Example:</label>
+      <input type="text" value="Read-only field" readonly>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>People Table</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Ada Obi</td>
+        <td>24</td>
+        <td>Female</td>
+        <td>Nigeria</td>
+      </tr>
+      <tr>
+        <td>John Smith</td>
+        <td>30</td>
+        <td>Male</td>
+        <td>USA</td>
+      </tr>
+      <tr>
+        <td>Emily Zhang</td>
+        <td>27</td>
+        <td>Female</td>
+        <td>China</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media</h2>
+
+    <h3>Sample Video</h3>
+    <video controls>
+      <source src="https://cdn.pixabay.com/video/2025/06/03/283533_large.mp4" type="video/mp4">
+    </video>
+
+    <h3>Sample Audio</h3>
+    <audio controls>
+      <source src="https://cdn.pixabay.com/download/audio/2024/09/24/audio_8ef91c0362.mp3?filename=best-background-music-no-copyright-244084.mp3" type="audio/mpeg">
+    </audio>
+
+    <h3>Sample Image</h3>
+    <img src="https://cdn.pixabay.com/photo/2025/07/26/03/16/butterfly-9735952_1280.jpg" alt="sample">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Eromosele</p>
+  </footer>
+
+</body>
+</html>
